@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+.home {
+  width: 100vw;
+  height: 94vh;
+  background-image: image-url('homeimg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants-button {
+  color: white;
+  width: 200px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: #000;
+  display: inline-flex; /* Allows width and height to work */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none; /* Removes underline */
+  font-size: 18px; /* Adjust text size */
+  font-weight: bold;
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease; /* Optional: smooth hover transition */
+}
+
+.restaurants-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+.home-filter{
+  width: 80%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
