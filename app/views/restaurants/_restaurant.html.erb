@@ -4,9 +4,31 @@
     <%= restaurant.name %>
   </p>
 
-  <p>
-    <strong>User:</strong>
-    <%= restaurant.user_id %>
-  </p>
+  <% if restaurant.address.present? %>
+    <p>
+      <strong>Address:</strong>
+      <%= restaurant.address %>
+    </p>
+  <% end %>
 
+  <% if restaurant.menu.present? %>
+    <p>
+      <strong>Menu:</strong>
+      <%= restaurant.menu %>
+    </p>
+  <% end %>
+
+  <% if restaurant.price_range.present? %>
+    <p>
+      <strong>Price Range:</strong>
+      <%= restaurant.price_range %>
+    </p>
+  <% end %>
+
+  <% if restaurant.opening_hours.present? %>
+    <p>
+      <strong>Opening Hours:</strong>
+      <%= restaurant.opening_hours %>
+    </p>
+  <% end %>
 </div>
