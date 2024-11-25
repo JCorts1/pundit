@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #000;
+  height: 60px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,44 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-toggler {
+  border-color: transparent; /* Optional: Remove border if needed */
+}
+
+.navbar-toggler-icon {
+  position: relative; /* Position to place pseudo-elements */
+  width: 24px; /* Width of each line */
+  height: 3px; /* Height of each line */
+  background-color: transparent; /* Main icon itself is hidden */
+  box-shadow: none; /* Remove default styles */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px; /* Same as the icon width */
+  height: 2px; /* Thickness of each line */
+  background-color: #fff; /* Desired color for lines */
+  left: 0; /* Align to the left */
+  transition: all 0.3s; /* Optional: for animations */
+}
+
+.navbar-toggler-icon::before {
+  top: -6px; /* Position for the top line */
+}
+
+.navbar-toggler-icon::after {
+  top: 6px; /* Position for the bottom line */
+}
+
+/* Middle line styling */
+.navbar-toggler {
+  border: none; /* Remove button border */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Middle line color */
 }
